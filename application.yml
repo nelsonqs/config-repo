@@ -1,9 +1,9 @@
 info:
-  description: Spring Cloud Samples
-  author: julio muñoz
+  description: Spring Cloud Tracker
+  author: tecnosim
   
 eureka:
-  hostname: localhost
+  hostname: 172.17.0.4
      
   #Virtual host name by which the clients identifies this service
   virtualHostName: ${spring.application.name}
@@ -15,7 +15,7 @@ eureka:
     instanceId: ${spring.application.name}
   
    
-  password: '{cipher}d61b84775382eacebb954052fe717766bc063fd923aea9d416c979e5cf80df86'
+  password: '123'
   client:
     serviceUrl:
       defaultZone: http://user:${eureka.password}@localhost:8761/eureka/
